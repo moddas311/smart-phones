@@ -93,10 +93,10 @@ const displayPhoneDetails = phone =>{
     phoneDetails.innerHTML =`
     <img src="${phone.image}" class="card-img-top" alt="...">
     <p>Relase Date: ${phone.releaseDate ? phone.releaseDate:'No Release Date Found'}</p>
-    <p>${phone.mainFeatures? phone.mainFeatures.chipSet : 'No Chipset Information'}</p>
-    <p>${phone.mainFeatures? phone.mainFeatures.displaySize : 'No Display Information'}</p>
-    <p>${phone.mainFeatures? phone.mainFeatures.memory : 'No Memory Information'}</p>
-    <p>Others: ${phone.others? phone.others.Bluetooth : 'No Bluetooth information'}</p>
+    <p>Processor: ${phone.mainFeatures? phone.mainFeatures.chipSet : 'No Chipset Information'}</p>
+    <p>Display: ${phone.mainFeatures? phone.mainFeatures.displaySize : 'No Display Information'}</p>
+    <p>Variant: ${phone.mainFeatures? phone.mainFeatures.memory : 'No Memory Information'}</p>
+    <p>Bluetooth: ${phone.others? phone.others.Bluetooth : 'No Bluetooth information'}</p>
     `;
 }
 
